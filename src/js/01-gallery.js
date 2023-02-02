@@ -24,4 +24,4 @@ gallery.innerHTML = createGalleryItem;
 
 new simpleLightBox('.gallery a', {
   captionsData: 'alt',
-})();
+});

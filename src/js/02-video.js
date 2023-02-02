@@ -8,8 +8,6 @@ const player = new Player(iframe);
 
 player.on('timeupdate', throttle(saveLocalStorage, 600));
 
-updateTime(keyForLocalStorage);
-
 function saveLocalStorage({ seconds }) {
   localStorage.setItem(keyForLocalStorage, seconds);
 }
@@ -20,3 +18,5 @@ function updateTime(key) {
     player.setCurrentTime(getCurrentTime);
   }
 }
+
+updateTime(keyForLocalStorage);
